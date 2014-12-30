@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Easy example | CartoDB.js</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    
+    <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+	<link rel="stylesheet" href="../resources/css/style.css">
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/3.11/themes/css/cartodb.css" />
+     
+     <link rel="stylesheet" href="../resources/css/override.css">   
+
+    <script src="../resources/javaScripts/lib/jquery/jquery-2.1.1.min.js"></script>
+
+     <!-- include cartodb.js library -->
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/3.11/cartodb.js"></script>
+    <script src="../resources/javaScripts/js/mapController.js"></script>
+  </head>
+  <body>
+    <div id="map"></div>
+    <!-- <div id="layer_selector" class="cartodb-infobox">
+      <ul>
+        <li data="all" class="selected"  layerName ='scoreLayer'>score <a class="selected" onClick=""></a></li>
+        <li data="3000"  layerName ='pointLayer'>population <a onClick=""></a></li>
+        <li data="6000"></li>
+        <li data="10000"></li>
+        <li data="50000"></li>
+      </ul>
+  </div> -->
+  <div id="background_div"></div>
+
+  <div id="layer_selector">
+        <form class="form mvn h7">
+          <div class="field mvn">
+            <ul class="fieldGroup">
+              <li class="mtn">
+                <span class="fieldItem">
+                  <label class="pls"><input class="mrs" type="checkbox"  name="affordability" value="score" checked="">Score</label>
+                </span>
+              </li>
+              <li>
+                <span class="fieldItem">
+                  <label class="pls"><input class="mrs" type="checkbox" name="affordability" value="test">test</label>
+                </span>
+              </li>
+              <li>
+                <span class="fieldItem">
+                  <label class="pls"><input class="mrs" type="checkbox"  name="affordability"  value="house">House</label>
+                </span>
+              </li>
+              <li>
+                <span class="fieldItem">
+                  <label class="pls"><input class="mrs" type="checkbox" name="affordability"  value="highSchool">High school</label>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </form>
+      </div>
+
+     <div id="houseNewRecordDiv" >
+        <ul>
+        <li  > <span class="label">地产名：</span><input  id='houseName'  class = 'textBox' type="text" ></li>
+        <li > <span  class="label">代理人：</span> <input id = 'agent' class = 'textBox'  type="text"></li>
+        <li > <span  class="label">地     址：</span> <input id = 'address' class = 'textBox'  type="text"></li>
+        <li > <span  class="label">电    话：</span> <input id = 'telphone' class = 'textBox'  type="text"></li>
+        <li class = 'button_li'> <input type="button"  class='submitBtn' value="submit" onclick = 'InsertRecord()'></li>
+      </ul>
+  </div>
+    <div id="contextMenu" >
+      <ul>
+        <li  onclick="showAddHouseRecordDIV()">添加房产信息</li>
+        <li  onclick ="getALlHouseRecord()" >查询房地产信息</li>
+        <li></li>
+      </ul>
+    </div>
+  </body>
+</html>

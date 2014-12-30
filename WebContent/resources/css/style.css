@@ -1,0 +1,138 @@
+@CHARSET "UTF-8";
+/*baground-div*/
+#background_div{
+  display: none;
+   position: absolute;
+   top: 0%;  left: 0%;
+    width: 100%;
+    height: 100%;
+     background-color: black;
+     z-index:1001;
+      -moz-opacity: 0.7;
+      opacity:.70;
+      filter: alpha(opacity=70);
+}
+
+/*start for layer_selector*/
+ #layer_selector {
+	position: absolute;
+      background-color: #FFFFFF;
+	top: 50px;
+	left: 29px;
+	padding: 0;
+	width: 211px;
+      }
+      #layer_selector ul {
+        padding: 0; margin: 0;
+        list-style-type: none;
+      }
+
+      #layer_selector li {
+        border-bottom: 1px solid #999;
+        padding: 15px 30px;
+        font-family: "Helvetica", Arial;
+        font-size: 13px;
+        color: #444;
+        cursor: auto;
+      }
+
+      #layer_selector li:hover {
+        background-color: #F0F0F0;
+        cursor: pointer;
+      }
+
+      #layer_selector li.selected {
+        background-color: #EEE;
+      }
+
+
+/*start for houseNewRecordDiv*/
+
+      #houseNewRecordDiv{
+        position: absolute;
+        bottom: 200px;
+        left: 400px;
+        padding: 0;
+        width: 350px;
+        height: 300px;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #999;
+        border:solid 1px;
+        z-index:1002;
+        display: none;
+      }
+
+     #houseNewRecordDiv ul {
+        padding: 0; margin: 0;
+        list-style-type: none;
+      }
+
+      #houseNewRecordDiv li {
+        border-bottom: 1px solid #999;
+        padding: 10px 30px;
+        font-family: "Helvetica", Arial;
+        font-size: 15px;
+        color: #444;
+        cursor: auto;
+      }
+
+      #houseNewRecordDiv  .button_li{
+        padding-left: 100px;
+      }
+
+      #houseNewRecordDiv .textBox {
+        height: 22px;
+
+      }
+      #houseNewRecordDiv .label{
+        text-align:right;
+
+      }
+
+   #houseNewRecordDiv .submitBtn {
+      width: 100px;
+      height: 35px;
+     background-color:  #FC9239;
+    }
+
+    #houseNewRecordDiv .submitBtn:hover{
+      background-color: #fb7403;
+    }
+  /*end houseNewRecordDiv*/
+
+ /*start for contextMenu*/
+      #contextMenu {
+        position: absolute;
+        bottom: 50px;
+        left: 50px;
+        padding: 0;
+        width: 150px;
+        height: 150px;
+        background-color: #FFFFFF;
+        border-bottom: 1px solid #999;
+        display: none;
+      }
+
+      #contextMenu ul {
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+      }
+
+      #contextMenu li {
+        border-bottom: 1px solid #999;
+        padding: 15px 30px;
+        font-family: "Helvetica", Arial;
+        font-size: 13px;
+        color: #444;
+        cursor: auto;
+      }
+
+      #contextMenu li:hover {
+        background-color: #F0F0F0;
+        cursor: pointer;
+      }
+
+      #contextMenu li.selected {
+        background-color: #EEE;
+      }
